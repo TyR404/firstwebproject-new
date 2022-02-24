@@ -6,62 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars</title>
 </head>
-<body style="background-color:rgb(196, 196, 196)">
-    <p>Best Sith:</p>
+<body style="background-color:rgb(196, 196, 196)">    
+
+    <style>
+        h1 {text-align: center}
+    </style>
+
+    <fieldset>
+        <h1>Star Wars Info</h1>
+    </fieldset>
+
     <ul>
-        <li>Maul</li>
-        <li>Vader</li>
-        <li>Sidious</li>
+        <li><a href="part1.html" target="_bank">Yoda Quote</a></li>
     </ul>
 
-    <p>Best Jedi:</p>
-    <ol type="1">
-        <li>Windu</li>
-        <li>Yoda</li>
-        <li>Kenobi</li>
+    <br>
+    <p><strong>Different Powers:</strong></p>
+    <ul>
+        <li>Republic</li>
+        <li>Empire</li>
+        <li>First Order</li>
+    </ul>
+
+    <p><strong>Troop Names:</strong></p>
+    <ol type="A">
+        <li>Republic: Clone Trooopers</li>
+        <li>Empire: Stormtroopers</li>
+        <li>First Order: Stormtroopers</li>
     </ol>
     <br>
-    <p>Info on The Top 3 Jedi:</p>
+
+    <label for="Character">8 of The Most Common Characters (Pre-Empire):</label> <br>
+    <Select name = "Character" id="Character">
+        <optgroup label="Jedi">
+            <option value="Anakin">Mace Windu</option>
+            <option value="Anakin">Yoda</option>
+            <option value="Anakin">Obi-Wan Kenobi</option>
+            <option value="Anakin">Anakin Skywalker</option>
+        </optgroup>
+        <optgroup label="Sith">
+            <option value="Anakin">Darth Sidious</option>
+            <option value="Anakin">Darth Plagueis</option>
+            <option value="Anakin">Darth Tyranus</option>
+            <option value="Anakin">Darth Vader</option>
+        </optgroup>
+    </Select>
+
+    <br>
+
+    <p><strong>Info on The 4 Jedi:</strong></p>
     <dl>
-        <dt>Mace Windu</dt>
+        <dt><strong>Mace Windu</strong></dt>
         <dd>Jedi master</dd>
         <dd>On The Jedi High Council</dd>
         <dd>Purple Lightsaber</dd>
-        <dt>Yoda</dt>
+        
+        <dt><strong>Yoda</strong></dt>
         <dd>Grand master</dd>
         <dd>On The Jedi High Council</dd>
         <dd>Green Lightsaber</dd>
-        <dt>Kenobi</dt>
+       
+        <dt><strong>Obi-Wan Kenobi</strong></dt>
         <dd>Jedi Knight</dd>
+        <dd>On The Jedi High Council</dd>
+        <dd>Blue Lightsaber</dd>
+        
+        <dt><strong>Anakin Skywalker</strong></dt>
+        <dd>Master</dd>
         <dd>On The Jedi High Council</dd>
         <dd>Blue Lightsaber</dd>
     </dl>
     <br>
-    <table>
+
+    <p><strong>Info on The 4 Sith:</strong></p>
+    <dl>
+        <dt><strong>Darth Sidious</strong></dt>
+        <dd>Dark Lord of the (Order of Sith)</dd>
+        <dd>Age Before Death: 117</dd>
+        <dd>Red Lightsaber</dd>
+        
+        <dt><strong>Darth Plagueis</strong></dt>
+        <dd>Dark Lord of the (Order of Sith)</dd>
+        <dd>Age Before Death: 115</dd>
+        <dd>Red Lightsaber</dd>
+       
+        <dt><strong>Darth Tyranus</strong></dt>
+        <dd>Dark Lord of the (Order of Sith)</dd>
+        <dd>Age Before Death: </dd>
+        <dd>Red Lightsaber</dd>
+        
+        <dt><strong>Darth Vader</strong></dt>
+        <dd>Dark Lord of the (Order of Sith)</dd>
+        <dd>Age Before Death: 45</dd>
+        <dd>Red Lightsaber</dd>
+    </dl>
+
+    <br>
+
+    <!--Credit(Table Borders): Jukka K. Korpela on Stack Overflow: "https://stackoverflow.com/questions/13624276/how-to-separate-table-rows-with-a-line"-->
+    <table border=1 frame=void rules=columns>
         <tr>
-            Best Lightsaber Colours:
-            <th>
-                Red
-                <td>(Sith),</td>
-            </th>
-            <th>
-                Purple
-                <td>(Jedi),</td>
-            </th>
-            <th>
-                Blue
-                <td>(Jedi),</td>
-            </th>
-            <th>
-                Green
-                <td>(Jedi),</td>
-            </th>
-            <th>
-                White
-                <td>(Neutral),</td>
-            </th>
+            <th> Color </th>
+            <th>Affiliation</th>
+        </tr>
+        <tr>
+            <td>Red</td>
+            <td>Sith</td>
+        </tr>
+        <tr>
+            <td>Blue</td>
+            <td>Jedi</td>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td>Jedi</td>
+        </tr>
+        <tr>
+            <td>White</td>
+            <td>Neutral</td>
         </tr>
     </table>
+    <br>
+    <br>
+    <form action="https://screenrant.com/star-wars-best-lightsaber-types-colors/" method="get">
+        <fieldset style="width:300px">
+            <legend>Lightsabers</legend>
+            <label for="name">What's Your Favourite Lightsaber Colour?</label>
+            <br>
+            <input type="text" id="name" name="name"><br>
+            <input type="Submit" value="Submit">
+        </fieldset>
+    </form>
+    <br>
+    
+    <p><Strong>A Powerful Quote From Master Yoda:</Strong></p>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h5SNAluOj6U" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <br>
+    <br>
+    <br>
+
+    <style>
+        textarea {resize: none;}
+    </style>
+
+    <textarea id="Review" name="Review" rows="4" cols="40" readonly>
+        User Reviews Coming Soon...
+    </textarea>
 </body>
 </html>
